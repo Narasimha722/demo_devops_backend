@@ -9,7 +9,7 @@ app.use(helmet())
 app.use(cors())
 app.use(express.json());
 
-mongoose.connect('mongodb://54.147.19.66:27017/?serverSelectionTimeoutMS=2000')
+mongoose.connect('mongodb://10.0.2.233:27017/?serverSelectionTimeoutMS=2000')
  .then(()=>console.log("connection done"))
  .catch((e)=>console.log(e))
 
